@@ -1,52 +1,23 @@
-import React, { useState } from 'react';
-import MovieList from './components/MovieList';
+import React from 'react';
+import Navbar from './components/Navbar.js'
+import Home from './components/pages/Home';
+import Review from './components/pages/Review';
+import About from './components/pages/About';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 const App = () => {
-  const movies = [
-    {
-      id: 1,
-      title: "Inception",
-      genre: "Sci-Fi",
-      rating: 8.8,
-      description: "A mind-bending thriller about dreams within dreams.",
-      poster: '/images/inception.jpg',
-    },
-    {
-      id: 2,
-      title: "The Dark Knight",
-      genre: "Action",
-      rating: 9.0,
-      description: "Batman fights crime in Gotham while dealing with the Joker.",
-      poster: "/images/the-dark-knight.jpg",
-    },
-    {
-      id: 3,
-      title: "The Matrix",
-      genre: "Sci-Fi",
-      rating: 8.7,
-      description: "A computer hacker learns the shocking truth about his reality.",
-      poster: "/images/matrix.jpg",
-    },
-  ];
-
-  const [reviews, setReviews] = useState([]);
-
-  const handleReviewSubmit = (movieId, reviewText) => {
-    setReviews([
-      ...reviews,
-      {
-        movieId,
-        reviewText,
-      },
-    ]);
-  };
-
   return (
-    <div className="App">
-      <h1>Movie Review App</h1>
-      <MovieList movies={movies} onReviewSubmit={handleReviewSubmit} />
-    </div>
+    <>
+      <Navbar />
+      <div className="App">
+        <Routes>
+          <Route path='/' element={ <Home />} />
+          <Route path='/review' element={ <Review />} />
+          <Route path='/about' element={ <About />} />
+        </Routes>
+      </div>
+    </>
   );
 };
 
