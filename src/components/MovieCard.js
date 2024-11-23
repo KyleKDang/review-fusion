@@ -16,13 +16,15 @@ const MovieCard = ({ movie, onReviewSubmit }) => {
 
   return (
     <div className="movie-card">
-      <img src={`./review-fusion/${movie.poster}`} alt={movie.title} className="movie-poster" />
+      <img src={`/review-fusion${movie.poster}`} alt={movie.title} className="movie-poster" />
       <div className="movie-details">
         <h2>{movie.title}</h2>
         <p>{movie.genre}</p>
-        <p>Rating: {movie.rating}</p>
-        <p>{movie.description}</p>
-        <ReviewForm
+        <p>{movie.releaseDate}</p>
+        <p>IMDb Rating: {movie.rating}</p>
+      </div>
+      <div className="review-form-container">
+        <ReviewForm className='review-form'
           reviewText={reviewText}
           onInputChange={handleInputChange}
           onSubmitReview={handleSubmitReview}
