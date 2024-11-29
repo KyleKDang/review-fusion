@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReviewForm from './ReviewForm';
 import './MovieCard.css';
 
-const MovieCard = ({ movie, onReviewSubmit }) => {
+const MovieCard = ({ movie, handleReviewSubmit }) => {
   const [reviewText, setReviewText] = useState('');
 
   const handleInputChange = (e) => {
@@ -10,7 +10,7 @@ const MovieCard = ({ movie, onReviewSubmit }) => {
   };
 
   const handleSubmitReview = () => {
-    onReviewSubmit(movie.id, reviewText);
+    handleReviewSubmit(movie.id, reviewText);
     setReviewText('');
   };
 
@@ -26,8 +26,8 @@ const MovieCard = ({ movie, onReviewSubmit }) => {
       <div className="review-form-container">
         <ReviewForm className='review-form'
           reviewText={reviewText}
-          onInputChange={handleInputChange}
-          onSubmitReview={handleSubmitReview}
+          handleInputChange={handleInputChange}
+          handleSubmitReview={handleSubmitReview}
         />
       </div>
     </div>

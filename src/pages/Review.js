@@ -1,7 +1,10 @@
 import React from 'react';
+import ReviewList from '../components/ReviewList';
 
-export default function Review() {
+export default function Review({ reviews }) {
     return (
-        <h1>Review</h1>
+        <>
+        <ReviewList reviews={reviews} />
+        </>
     )
 }
