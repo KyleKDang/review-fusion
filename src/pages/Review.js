@@ -1,25 +1,10 @@
-import React, { useState } from 'react';
-import MovieList from '../components/MovieList';
-import movies from '../movies.js'
+import React from 'react';
+import ReviewList from '../components/ReviewList';
 
-export default function Review() {
-    
-    const [reviews, setReviews] = useState([]);
-    
-    const handleReviewSubmit = (movieId, reviewText) => {
-        setReviews([
-          ...reviews,
-          {
-            movieId,
-            reviewText,
-          },
-        ]);
-    };
-
+export default function Review({ reviews }) {
     return (
         <>
-        <h1>Review</h1>
-        <MovieList movies={movies} onReviewSubmit={handleReviewSubmit} />
+        <ReviewList reviews={reviews} />
         </>
     )
 }

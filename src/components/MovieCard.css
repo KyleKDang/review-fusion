@@ -13,8 +13,9 @@
     object-fit: cover;
   }
   
-  .movie-details {
+  .movie-details, .review-form-container { 
     padding: 1rem;
+    height: 21%;
   }
   
   .movie-details h2 {
@@ -33,4 +34,6 @@
     font-weight: bold;
     color: #f39c12;
   }
+
+
   

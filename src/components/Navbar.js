@@ -4,9 +4,9 @@ import './Navbar.css';
 
 export default function Navbar() {
     return <nav className='nav'>
-        <Link to='/review-fusion' className='site-title'>Review Fusion</Link>
+        <Link to='/' className='site-title'>Review Fusion</Link>
         <ul>
-            <CustomLink to='review'>Review</CustomLink>
+            <CustomLink to='review'>Reviews</CustomLink>
             <CustomLink to='about'>About</CustomLink>
         </ul>
     </nav>
