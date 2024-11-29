@@ -5,7 +5,7 @@ import ReviewRow from './ReviewRow';
 const ReviewList = ({ reviews }) => {
     return (
         <div className='review-list'>
-            {reviews.map((review) => (
+            {reviews.slice().reverse().map((review) => (
                 <ReviewRow className='review-row' review={review} />
             ))}
         </div>
