@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/review-fusion/static/css/main.caa4f778.css",
+    "main.css": "/review-fusion/static/css/main.8818edfc.css",
     "main.js": "/review-fusion/static/js/main.32627dde.js",
     "index.html": "/review-fusion/index.html",
-    "main.caa4f778.css.map": "/review-fusion/static/css/main.caa4f778.css.map",
+    "main.8818edfc.css.map": "/review-fusion/static/css/main.8818edfc.css.map",
     "main.32627dde.js.map": "/review-fusion/static/js/main.32627dde.js.map"
   },
   "entrypoints": [
-    "static/css/main.caa4f778.css",
+    "static/css/main.8818edfc.css",
     "static/js/main.32627dde.js"
   ]
 }
