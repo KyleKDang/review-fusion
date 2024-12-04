@@ -9,7 +9,7 @@ const ReviewRow = ({ review }) => {
         <div className='review-row'>
             <div className='review-movie-details'>
                 <img src={`/review-fusion${movie.poster}`} alt={movie.title} className="review-movie-poster" />
-                <h2>{movie.title}</h2>
+                <div className='review-movie-title'>{movie.title}</div>
             </div>
             <p className='review-text'>
                 {review.reviewText}

@@ -10,11 +10,13 @@
     flex-direction: column;
     justify-content: space-between;
     margin-left: 2rem;
+    max-width: 250px;
 }
 
-.review-movie-details h2 {
+.review-movie-title {
     color: #333;
     font-size: 1.4rem;
+    margin-bottom: 0.75rem;
 }
 
 .review-movie-poster {
