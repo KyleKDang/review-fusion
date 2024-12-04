@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import ReviewForm from './ReviewForm';
 import './MovieCard.css';
+import { useReviewsUpdate } from '../ReviewsContext.js';
 
-const MovieCard = ({ movie, handleReviewSubmit }) => {
+const MovieCard = ({ movie }) => {
+  const handleReviewSubmit = useReviewsUpdate()
+
   const [reviewText, setReviewText] = useState('');
 
   const handleInputChange = (e) => {
