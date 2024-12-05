@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { doCreateUserWithEmailAndPassword } from '../firebase/auth';
+import { doCreateUserWithEmailAndPassword, doSignInWithGoogle } from '../firebase/auth';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../contexts/authContext/index.jsx';
 import './Signup.css';
@@ -24,6 +24,19 @@ const Signup = () => {
         } catch (err) {
             setIsRegistering(false);
             setError('Signup failed. Please try again.');
+        }
+    };
+
+    const handleGoogleSignIn = async (e) => {
+        e.preventDefault();
+        try {
+            if (!isRegistering) {
+                setIsRegistering(true);
+                await doSignInWithGoogle();
+            }
+        } catch (err) {
+            setIsRegistering(false);
+            setError('Sign in with Google failed. Please try again.');
         }
     };
 
@@ -56,6 +69,9 @@ const Signup = () => {
                 {error && <p style={{ color: 'red' }}>{error}</p>}
                 <button type='submit'>Sign Up</button>
             </form>
+            <button onClick={handleGoogleSignIn} disabled={isRegistering}>
+                {isRegistering ? 'Signing In...' : 'Sign In with Google'}
+            </button>
         </div>
     )
 };

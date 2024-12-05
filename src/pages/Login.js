@@ -34,7 +34,7 @@ const Login = () => {
             }
         } catch (err) {
             setIsSigningIn(false);
-            setError('Login failed. Please check your credentials.');
+            setError('Sign in with Google failed. Please try again.');
         }
     };
 
