@@ -33,10 +33,26 @@
     padding: 0.25rem;
 }
 
-.nav li.active {
+.nav li:active {
     background: #555;
 }
 
 .nav li:hover {
+    background: #777;
+}
+
+.logout-button {
+    background-color: transparent;
+    vertical-align: middle;
+    margin: 0;
+    outline: none;
+    border-radius: 0;
+}
+
+.logout-button:active {
+    background: #555;
+}
+
+.logout-button:hover {
     background: #777;
 }
