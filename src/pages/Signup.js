@@ -46,32 +46,33 @@ const Signup = () => {
 
     return (
         <div className='signup-page'>
-            <h1>Sign Up</h1>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Email:</label>
+            <div className='signup-container'>
+                <div className='signup-text'>Sign Up</div>
+                <form onSubmit={handleSubmit}>
                     <input 
                         type='email'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        placeholder='Email'
                         required
                     />
-                </div>
-                <div>
-                    <label>Password:</label>
                     <input 
                         type='password'
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        placeholder='Password'
                         required
                     />
-                </div>
-                {error && <p style={{ color: 'red' }}>{error}</p>}
-                <button type='submit'>Sign Up</button>
-            </form>
-            <button onClick={handleGoogleSignIn} disabled={isRegistering}>
-                {isRegistering ? 'Signing In...' : 'Sign In with Google'}
-            </button>
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
+                    <button className='signup-button' type='submit' disabled={isRegistering}>
+                        {isRegistering ? 'Signing Up...' : 'Sign Up'}
+                    </button>
+                </form>
+                <button className='google-button' onClick={handleGoogleSignIn} disabled={isRegistering}>
+                    <img src='/review-fusion/icons/google.png' alt='Google' />
+                    <div>{isRegistering ? 'Signing In...' : 'Sign In with Google'}</div>
+                </button>
+            </div>
         </div>
     )
 };

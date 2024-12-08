@@ -44,34 +44,33 @@ const Login = () => {
 
     return (
         <div className='login-page'>
-            <h1>Login</h1>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Email:</label>
+            <div className='login-container'>
+                <div className='login-text'>Login</div>
+                <form onSubmit={handleSubmit}>
                     <input 
                         type='email'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        placeholder='Email'
                         required
                     />
-                </div>
-                <div>
-                <label>Password:</label>
                     <input 
                         type='password'
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        placeholder='Password'
                         required
                     />
-                </div>
-                {error && <p style={{ color: 'red' }}>{error}</p>}
-                <button type='submit' disabled={isSigningIn}>
-                    {isSigningIn ? 'Logging In...' : 'Login'}
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
+                    <button className='login-button' type='submit' disabled={isSigningIn}>
+                        {isSigningIn ? 'Logging In...' : 'Login'}
+                    </button>
+                </form>
+                <button className='google-button' onClick={handleGoogleSignIn} disabled={isSigningIn}>
+                    <img src='/review-fusion/icons/google.png' alt='Google' />
+                    <div>{isSigningIn ? 'Signing In...' : 'Sign In with Google'}</div>
                 </button>
-            </form>
-            <button onClick={handleGoogleSignIn} disabled={isSigningIn}>
-                {isSigningIn ? 'Signing In...' : 'Sign In with Google'}
-            </button>
+            </div>
         </div>
     );
 };

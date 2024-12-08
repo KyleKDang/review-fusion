@@ -1,30 +1,54 @@
 .signup-page {
+    height: 100vh - 3rem;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-container {
+    border: 2px solid #CCC;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.signup-text {
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+.signup-container form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.signup-page form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.signup-page input {
+.signup-container input {
     margin: 10px 0;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 10px 20px;
 }
 
-.signup-page button {
-    width: 10rem;
-    padding: 10px;
-    background-color: #4CAF50;
+.google-button, .signup-button {
+    width: 13rem;
+    height: 2.75rem;
     color: white;
     border: none;
     cursor: pointer;
+    padding: 3px;
 }
 
-.signup-page button:hover {
-    background-color: #45a049;
+.google-button {
+    display: flex;
+    align-items: center;
+}
+
+.google-button img {
+    height: 100%;
+}
+
+.google-button div {
+    margin: 0 10px;
 }
