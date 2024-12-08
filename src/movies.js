@@ -65,7 +65,7 @@ const movies = [
     },
     {
       id: 9,
-      title: "The Lord of the Rings: The Return of the King",
+      title: "LOTR: The Return of the King",
       genre: "Fantasy/Adventure",
       rating: 9,
       releaseDate: "December 17, 2003",

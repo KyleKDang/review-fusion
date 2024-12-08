@@ -1,39 +1,69 @@
 .movie-card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 250px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-  }
-  
-  .movie-poster {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-  }
-  
-  .movie-details, .review-form-container { 
-    padding: 1rem;
-    height: 21%;
-  }
-  
-  .movie-details h2 {
-    margin: 0;
-    font-size: 1.4rem;
-    color: #333;
-  }
-  
-  .movie-details p {
-    font-size: 1rem;
-    color: #777;
-    margin: 5px 0;
-  }
-  
-  .movie-details .rating {
-    font-weight: bold;
-    color: #f39c12;
-  }
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.movie-details, .review-form-container { 
+  padding: 1rem;
+}
+
+.movie-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+}
+
+.movie-title-container h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.movie-details p {
+  font-size: 1rem;
+  color: #777;
+  margin: 5px 0;
+}
+
+.review-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.review-button div {
+  color: blue;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.review-button div:hover {
+  color: white;
+  background: blue;
+}
+
+.review-button img {
+  width: 30px;
+  height: auto;
+}
+
+.review-button:hover {
+  background: none;
+}
+
 
 
   
