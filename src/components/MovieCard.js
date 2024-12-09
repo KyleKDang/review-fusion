@@ -15,6 +15,7 @@ const MovieCard = ({ movie }) => {
 
   const handleSubmitReview = () => {
     handleReviewSubmit(movie.id, reviewText);
+    setShowReviewForm(showReviewForm => !showReviewForm);
     setReviewText('');
   };
 
