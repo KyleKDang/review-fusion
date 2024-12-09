@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/review-fusion/static/css/main.c878ac26.css",
-    "main.js": "/review-fusion/static/js/main.de5708ec.js",
+    "main.css": "/review-fusion/static/css/main.16c8ba90.css",
+    "main.js": "/review-fusion/static/js/main.ea0a8734.js",
     "index.html": "/review-fusion/index.html",
-    "main.c878ac26.css.map": "/review-fusion/static/css/main.c878ac26.css.map",
-    "main.de5708ec.js.map": "/review-fusion/static/js/main.de5708ec.js.map"
+    "main.16c8ba90.css.map": "/review-fusion/static/css/main.16c8ba90.css.map",
+    "main.ea0a8734.js.map": "/review-fusion/static/js/main.ea0a8734.js.map"
   },
   "entrypoints": [
-    "static/css/main.c878ac26.css",
-    "static/js/main.de5708ec.js"
+    "static/css/main.16c8ba90.css",
+    "static/js/main.ea0a8734.js"
   ]
 }
