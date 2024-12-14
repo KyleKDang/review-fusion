@@ -24,7 +24,7 @@ export function ReviewsProvider({ children }) {
     const getSavedReviews = async () => {
         const reviewsArray = [];
 
-        const q = query(collection(db, 'reviews'), orderBy("movieId"))
+        const q = query(collection(db, 'reviews'), orderBy("timestamp"))
         const querySnapshot = await getDocs(q);
 
         querySnapshot.forEach((doc) => {
@@ -53,8 +53,10 @@ export function ReviewsProvider({ children }) {
         setReviews([
             ...reviews,
             {
-            movieId,
-            reviewText,
+                timestamp: null,
+                userEmail: userEmail,
+                movieId,
+                reviewText,
             },
         ]);
     };

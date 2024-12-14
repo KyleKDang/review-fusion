@@ -2,6 +2,7 @@
     display: flex;
     min-height: 26rem;
     align-items: center;
+    position: relative;
 }
 
 .review-movie-details {
@@ -33,4 +34,16 @@
     color: #666;
     margin: 1.2rem 7rem;
     text-align: justify;
+}
+
+.review-details {
+    min-width: 250px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    right: 0%;
+    margin-right: 2rem;
 }
