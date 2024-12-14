@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReviewForm from './ReviewForm';
 import './MovieCard.css';
-import { useReviewsUpdate } from '../ReviewsContext.js';
+import { useReviewsUpdate } from '../contexts/ReviewsContext.js';
 
 const MovieCard = ({ movie }) => {
   const handleReviewSubmit = useReviewsUpdate()
@@ -24,7 +24,7 @@ const MovieCard = ({ movie }) => {
   }
 
   return (
-    <div className="movie-card">
+    <div className={`movie-card ${showReviewForm ? 'show-review-form' : 'hide-review-form'}`}>
       <img src={`/review-fusion${movie.poster}`} alt={movie.title} className="movie-poster" />
       <div className="movie-details">
         <div className='movie-title-container'>

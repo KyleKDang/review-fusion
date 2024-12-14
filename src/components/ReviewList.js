@@ -1,7 +1,7 @@
 import React from 'react';
 import './ReviewList.css';
 import ReviewRow from './ReviewRow';
-import { useReviews } from '../ReviewsContext.js';
+import { useReviews } from '../contexts/ReviewsContext.js';
 
 const ReviewList = () => {
     const reviews = useReviews();
