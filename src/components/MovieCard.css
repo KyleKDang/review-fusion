@@ -8,6 +8,14 @@
   margin-bottom: 2rem;
 }
 
+.show-review-form {
+  max-height: None;
+}
+
+.hide-review-form {
+  max-height: 610px;
+}
+
 .movie-poster {
   width: 100%;
   height: 350px;

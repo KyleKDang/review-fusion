@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { db } from './firebase/firebase.js';
+import { db } from '../firebase/firebase.js';
 import { collection, query, orderBy, addDoc, getDocs, serverTimestamp } from 'firebase/firestore';
-import { useAuth } from './contexts/authContext/index.jsx';
+import { useAuth } from './authContext/index.jsx';
 
 const ReviewsContext = React.createContext();
 const ReviewsUpdateContext = React.createContext();

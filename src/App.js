@@ -7,7 +7,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { ReviewsProvider } from './ReviewsContext.js';
+import { ReviewsProvider } from './contexts/ReviewsContext.js';
 import { AuthProvider } from './contexts/authContext/index.jsx';
 
 const App = () => {

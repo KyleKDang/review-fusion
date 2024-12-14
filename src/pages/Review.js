@@ -1,6 +1,6 @@
 import React from 'react';
 import ReviewList from '../components/ReviewList';
-import { useReviews } from '../ReviewsContext.js';
+import { useReviews } from '../contexts/ReviewsContext.js';
 
 export default function Review() {
     const reviews = useReviews()
