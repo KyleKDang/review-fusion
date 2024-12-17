@@ -10,9 +10,13 @@ const ReviewRow = ({ review }) => {
     
     const hasTimestamp = review.timestamp !== null;
     const date = hasTimestamp ? review.timestamp.toDate() : '';
-    const month = hasTimestamp ? date.getMonth() : '';
-    const day = hasTimestamp ? date.getDate() : '';
     const year = hasTimestamp ? date.getFullYear() : '';
+    const month = hasTimestamp ? 1 + date.getMonth() : '';
+    const day = hasTimestamp ? date.getDate() : '';
+    const time = hasTimestamp ? date.toLocaleString([], {
+        hour: '2-digit',
+        minute: '2-digit'
+    }) : '';
 
     return (
         <div className='review-row'>
@@ -25,7 +29,7 @@ const ReviewRow = ({ review }) => {
             </p>
             <div className='review-details'>
                 <span>Review By <strong>{username}</strong></span>
-                <em>{hasTimestamp ? `${month}/${day}/${year}` : 'Just Now'}</em>
+                <em>{hasTimestamp ? `${month}/${day}/${year} ${time}` : 'Just Now'}</em>
             </div>
         </div>
     );
