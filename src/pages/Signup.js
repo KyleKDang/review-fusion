@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { doCreateUserWithEmailAndPassword, doSignInWithGoogle } from '../firebase/auth';
+import { doCreateUserWithEmailAndPassword, doSignInWithGoogle } from '../firebase/auth.js';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../contexts/authContext/index.jsx';
 import './Signup.css';

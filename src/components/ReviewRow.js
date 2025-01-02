@@ -1,8 +1,7 @@
 import React from 'react';
 import './ReviewRow.css';
-import movies from '../movies';
 
-const ReviewRow = ({ review }) => {
+const ReviewRow = ({ movies, review }) => {
     const movie = movies[review.movieId-1];
 
     const hasUserEmail = review.userEmail !== null;
@@ -21,7 +20,7 @@ const ReviewRow = ({ review }) => {
     return (
         <div className='review-row'>
             <div className='review-movie-details'>
-                <img src={`/review-fusion${movie.poster}`} alt={movie.title} className="review-movie-poster" />
+                <img src={movie.poster} alt={movie.title} className="review-movie-poster" />
                 <div className='review-movie-title'>{movie.title}</div>
             </div>
             <p className='review-text'>

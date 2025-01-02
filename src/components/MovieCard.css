@@ -13,7 +13,7 @@
 }
 
 .hide-review-form {
-  max-height: 610px;
+  max-height: 620px;
 }
 
 .movie-poster {
@@ -30,7 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 70px;
+  min-height: 80px;
 }
 
 .movie-title-container h2 {

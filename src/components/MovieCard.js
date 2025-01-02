@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReviewForm from './ReviewForm';
+import ReviewForm from './ReviewForm.js';
 import './MovieCard.css';
 import { useReviewsUpdate } from '../contexts/ReviewsContext.js';
 
@@ -25,7 +25,7 @@ const MovieCard = ({ movie }) => {
 
   return (
     <div className={`movie-card ${showReviewForm ? 'show-review-form' : 'hide-review-form'}`}>
-      <img src={`/review-fusion${movie.poster}`} alt={movie.title} className="movie-poster" />
+      <img src={movie.poster} alt={movie.title} className="movie-poster" />
       <div className="movie-details">
         <div className='movie-title-container'>
           <h2>{movie.title}</h2>
