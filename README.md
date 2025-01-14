@@ -1,3 +1,5 @@
+## NOTE: A static version of the website is deployed on GitHub Pages with limited movie selections
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
