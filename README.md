@@ -1,4 +1,4 @@
-## NOTE: A static version of the website is deployed on GitHub Pages with limited movie selections
+## NOTE: A static version of the website is deployed on GitHub Pages with limited movie selections [Click Here](https://kylekdang.github.io/review-fusion/)
 
 # Getting Started with Create React App
 
