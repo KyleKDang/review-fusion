@@ -1,5 +1,9 @@
 ## NOTE: A static version of the website is deployed on GitHub Pages with limited movie selections
 
+![Home Page](public/screenshots/home-page.png)
+
+![Reviews Page](public/screenshots/reviews-page.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
